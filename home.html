@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="./styles/styles.css" rel="stylesheet" />
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="./scripts/script.js"></script> 
+		<tittle></tittle>
+	</head>
+	<body>
+		<div class="landing-page-image">
+			<span class="landing-page-header">Blue Plates</span>
+			<span>food for mind and body</span>
+		</div>
+
+		<!-- Buttons -->
+		<div class="menu-items">
+				<button type="button" class="nav-menu" id="home-page" onclick="managePage(event)">HOME</button>
+				<button type="button" class="nav-menu" id="about-page" onclick="managePage(event)">ABOUT</button>
+				<button type="button" class="nav-menu" id="menu-page" onclick="managePage(event)">MENU</button>
+				<button type="button" class="nav-menu" id="gallery-page" onclick="managePage(event)">GALLERY</button>
+				<button type="button" class="nav-menu" id="healthy-tips-page" onclick="managePage(event)">HEALTHY TIPS</button>
+				<button type="button" class="nav-menu" id="contact-page" onclick="managePage(event)">CONTACT US</button>
+			</div>
+
+		<!-- Landing Page Content -->
+		<div id="landing-page">
+			<div class="specialities-section-container">
+				<div class="specialities-section text-align-center-class">
+					<h1>WELCOME TO BLUE PLATES</h1>
+					<h2>OUR SPECIALITIES</h2>
+					<div>
+						<p>Mughlai Chicken</p>
+					</div>
+					<div>
+						<p>Non-veg Platter</p>
+					</div>
+					<div>
+						<p>Butter Chicken</p>
+					</div>
+					<div>
+						<p>Paneer Tikka</p>
+					</div>
+					<div>
+						<p>Mango Sorbet</p>
+					</div>
+					<div>
+						<p>Blue Plates Mohito</p>
+					</div>
+					<div>
+						<p>Blue Plates Spring Rolls</p>
+					</div>
+				</div>
+				<div class="daily-deals-section">
+					<div class="text-align-center-class"><h1>Dish Of The Day</h1></div>
+					<div class="dish-of-day">
+						<div class="dish-of-day-label">
+							<div ><h2>Shahi Tukda</h2></div>
+							<div class="dish-of-the-day-price">@160/- Only</div>
+						</div>
+						<div class="dish-of-day-image"></div>
+					</div>
+					<div>
+						<h2>Special Offers:</h2>
+					</div>
+					<div class="special-offers-container"> 
+						<div><p>Mocktails on the house on the bill above 3000/-</p></div>
+						<div><p>5% cashback on ICICI credit card</p></div>
+						<div><p>Zomato coupons applicable</p></div>
+					</div>
+				</div>
+			</div>
+			<!-- <form>
+				<button type="button">FEEDBACK</button>
+			</form> -->
+		</div>
+
+		<!-- About Content -->
+		<div id="about" class="display-none-class">
+			<div>
+					<h2 class="text-align-center-class">Blue Plates</h2>
+					<div>
+						<p>Started in 2022 as a college project by three first year B.Tech students, then bloomed as a side project while they were busy in their corporate lives and later flourished as a full time business to provide excellent ambience and quality food along with the customization of menu items as per customer's preference</p>
+						<p>
+							Food is prepared with the state of the art culinary skills acquired by our experienced chefs in their years of hard work and practice. The garden-fresh ingredients are used in the kitchen, dishes are prepared by passionate chefs and served with warmth of love by our staff.  
+						</p>
+						<p>
+							We have been serving since 2022, and wish to do it for long. We have our branches in Phagwara, Jalandhar and Chandigarh. Blue Plates name was chosen because of the color of the Sky which inspires us to do more because Sky has no limits
+						</p>
+					</div>
+				</div>
+		</div>
+
+		<!--  Healthy Tips Page-->
+		<div id="healty-tips" class="display-none-class">
+			<div>
+				<h2 class="text-align-center-class">Some Healthy Tips</h2>
+				<div>
+					<ul >
+						<li>Always start with light appetizer/sald</li>
+						<li>Don't hesitate to ask for extra spicy food if you like it but it's not recommended</li>
+						<li>You can fill up on vegetables (but you can prepare it at home too :p)</li>
+						<li>Too Much of everything is not always good, keep this in mind for salt and sugar</li>
+						<li>Ending the meal with something sweet is good, but with lemonade it's always better</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Gallery Content -->
+		<div id="gallery" class="display-none-class">
+			<div class="slideshow-container">
+				<div class="mySlides">
+				    <img class="gallery-image" src="./images/img1.jpeg">
+			  	</div>
+			  	<div class="mySlides">
+				    <img class="gallery-image" src="./images/img2.jpeg">
+			  	</div>
+			  	<div class="mySlides">
+				    <img  class="gallery-image" src="./images/img3.jpeg">
+				 </div>
+				<div class="mySlides">
+				    <img class="gallery-image" src="./images/img4.jpeg">
+			  	</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+		</div>
+
+		<!-- Menu Content-->
+		<div id="menu" class="display-none-class">
+			 <div style="display: flex; flex-direction: row;">
+			 	<div style="flex: 0.5;">
+			 	<div>
+			 		<ul>
+			 			<h2>Starter/Appetizer</h2>
+			 			<li>Masala Papad --------------------------------------------- 100/-</li>
+			 			<li>Garlic Bread ---------------------------------------------- 99/-</li>
+			 			<li>French Fries ---------------------------------------------- 80/-</li>
+			 			<li>Veg Soup ------------------------------------------------- 150/-</li>
+			 			<li>Non-Veg Soup -------------------------------------------- 200/-</li>
+			 			<li>Zuchini Sticks--------------------------------------------- 130/-</li>
+			 		</ul>
+			 	</div>
+			 	<div>
+			 		<ul>
+			 			<h2>Main Course</h2>
+			 			<li>Paneer Butter Masala -------------------------------------- 350/-</li>
+			 			<li>Paneer Tikka ---------------------------------------------- 320/-</li>
+			 			<li>Daal Makhni ----------------------------------------------- 220/-</li>
+			 			<li>Mughlai Chicken ------------------------------------------ 400/-</li>
+			 			<li>Butter Chicken ------------------------------------------- 400/-</li>
+			 			<li>Afghani Chicken ------------------------------------------ 400/-</li>
+			 		</ul>
+			 	</div>
+			 	<div>
+			 		<ul>
+			 			<h2>Bread</h2>
+			 			<li>Rumali Roti ----------------------------------------------- 20/-</li>
+			 			<li>Missi Roti ------------------------------------------------ 30/-</li>
+			 			<li>Tawa Roti ------------------------------------------------- 10/-</li>
+			 			<li>Garlic Naan ----------------------------------------------- 35/-</li>
+			 			<li>Kashmiri Naan --------------------------------------------- 40/-</li>
+			 		</ul>
+			 	</div>
+			 </div>
+			 <div style="flex: 0.5;">
+			 	<div>
+			 		<ul>
+			 			<h2>Platter</h2>
+			 			<li>Veg Platter ----------------------------------------------- 360/-</li>
+			 			<li>Non-Veg Platter ------------------------------------------ 480/-</li>
+			 			<li>Fruit Platter ---------------------------------------------- 300/-</li>
+			 		</ul>
+			 	</div>
+			 	<div>
+			 		<ul>
+			 			<h2>Shakes/Juices</h2>
+			 			<li>Strawberry Shake (seasonal) ------------------------------ 100/-</li>
+			 			<li>Banana Shake --------------------------------------------- 60/-</li>
+			 			<li>Oats + Chcoloate Shake------------------------------------ 80/-</li>
+			 			<li>Mango Shake (seasonal) ----------------------------------- 50/-</li>
+			 		</ul>
+			 	</div>
+			 	<div>
+			 		<ul>
+			 			<h2>Deserts</h2>
+			 			<li>Gulab Jamun ----------------------------------------------- 80/-</li>
+			 			<li>Ice Cream (mango/strawberry/vanilla) ----------------------- 80/-</li>
+			 			<li>Moong Daal Halwa ----------------------------------------- 100/-</li>
+			 			<li>Gajar halwa (Seasonal) -------------------------------------- 100/-</li>
+			 			<li>Sizzling Brownie with Ice Cream ------------------------------- 150/-</li>
+			 		</ul>
+			 		<ul>
+			 			<h2>Signature Dishes</h2>
+			 			<li>Paneer 65 --------------------------------------------------- 260/-</li>
+			 			<li>Chicken 65 -------------------------------------------------- 340/-</li>
+			 		</ul>
+			 	</div>
+			 </div>
+			 </div>
+		</div>
+
+		<!-- Contact Us Content-->
+		<div id="contact" class="display-none-class">
+			<div class="contact-use-form">
+				<div class="flex-0_5">
+					<form method="POST" name="EmailForm" id="contact-form">
+						Name:
+						<br>
+						<input type="text" size="60" id="userName" name="name" />
+						<br>
+						Email:
+						<br>
+						<input type="text" size="60" id="userEmail" name="email"/>
+						<br>
+						Query/Feedback:
+						<br>
+						<textarea name="comment" rows="6" id="userComment" cols="49"></textarea>
+						<br>
+						<br>
+						<button type="button" class="nav-menu" onclick="sendEmail()">Send Email</button>
+					</form>
+				</div>
+				<div class="flex-0_5">
+					Email: blueplates22@gmail.com
+					<br>
+					
+				Contact: (+91)-6280557353<br>
+					<div class ="numbers-0_5">
+					         (+91)-7644000370<br>
+					         (+91)-7897681121
+					</div>        
+				</div>
+				
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+      font-family: cursive;
+}
+.landing-page-image {
+      height: 15rem;
+      background-image: linear-gradient(to bottom, rgb(116 124 167 / 52%), rgb(57 74 157)), url(../images/landing-page-image.jpg);
+      background-repeat: no-repeat;
+      color: white;
+}
+
+.landing-page-header {
+      padding: 1.5rem 0rem 0rem 3rem;
+      font-size: 5rem;
+}
+
+.menu-items {
+      display: flex;
+      border-top: 5px solid white;
+}
+
+
+
+.nav-menu {
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      font-family: cursive;
+      background: #394b9d;
+      border: 2px dotted white;
+      border-radius: 5px;
+      flex: auto;
+      text-align: center;  
+}
+
+.selected {
+      background: white !important;
+      color: #394b9d !important;
+      border: 2px dotted #394b9d !important;
+}
+
+.text-align-center-class {
+      text-align: center;
+}
+
+.dish-of-the-day-price {
+      text-align:center;
+      margin-top: -16px;
+}
+.specialities-section-container {
+      display: flex;
+}
+
+.specialities-section, .daily-deals-section {
+      flex: 0.5;
+}
+
+.daily-deals-section {
+      padding-left: 2rem;
+}
+
+.dish-of-day {
+      display: flex;
+      flex-direction: row;
+}
+.dish-of-day-label {
+      flex: 0.3;
+      text-align: center;
+}
+
+.dish-of-day-image {
+      flex:0.5;
+      height: 10.5rem;
+      background-image: url("../images/shahi-tukda.jpg");
+      background-repeat: no-repeat;
+}
+
+.special-offers-container {
+      display: flex;
+      flex-direction: row;
+}
+
+.special-offers-container > * {
+      height: 5rem;
+      width: 10rem;
+      margin-right: 10px;
+      background: #394b9d;
+      color: white;
+      padding: 0px 10px 10px 10px;
+      text-align: center;
+}
+
+.display-none-class {
+      display: none;
+}
+
+.mySlides {
+      display: none
+}
+
+.gallery-image {
+      vertical-align: middle;
+      height: 35rem;
+      width:100%;
+}
+.menu-image {
+     width:100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 6rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.contact-use-form {
+      display:flex;
+      flex-direction: row;
+      padding-top: 1rem;
+}
+
+.flex-0_5 {
+      flex: 0.5;
+}
+.numbers-0_5
+{
+      margin-left: 4.3rem;
+}
